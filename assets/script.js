@@ -1,10 +1,10 @@
 // Assignment code here
 // Global Variables
-var specialChar = ["!", "\u0022", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "\u005B", "\u005C", "\u005D", "^", "_", "`", "{", "|", "}", "~"]
+var specialChar = ["!", "\u0022", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "\u005B", "\u005C", "\u005D", "^", "_", "`", "{", "|", "}", "~"];
 console.log(specialChar)
-var numbersGen = [...Array(10)].map((_, i) => i);
+var numbersGen = "0123456789".split("");
 console.log(numbersGen)
-var alphabetGen = [...Array(26)].map((_, i) => String.fromCharCode(i + 97))
+var alphabetGen = "abcdefghijklmnopqrstuvwxyz".split("");
 console.log(alphabetGen)
 var megaArray = []
 // User Function
@@ -13,7 +13,6 @@ var userLower = confirm("Would you like lowercase letters? \nOk for yes, Cancel 
 var userCapital = confirm("Would you like CAPITAL letters? \nOk for yes, Cancel for no");
 var userNumber = confirm("Would you like numbers? \nOk for yes, Cancel for no");
 var userSpecial = confirm("Would you like special characters? \nOk for yes, Cancel for no");
-  if (userLower)
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
