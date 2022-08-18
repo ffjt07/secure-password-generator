@@ -2,7 +2,8 @@
 // Global Variables
 var specialChar = ["!", "\u0022", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "\u005B", "\u005C", "\u005D", "^", "_", "`", "{", "|", "}", "~"]
 console.log(specialChar)
-
+var numbers = [...Array(10)].map((_, i) => i);
+console.log(numbers)
 var alphabet = [...Array(26)].map((_, i) => String.fromCharCode(i + 97))
 console.log(alphabet)
 
