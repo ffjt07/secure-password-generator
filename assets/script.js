@@ -42,6 +42,7 @@ console.log(alphabetGen);
 var megaArray = [];
 // User Function
 function generatePassword() {
+  // function prompts
   var userLength = prompt(
     "How many characters do you want your password? \n Must be between 8 and 128 characters."
   );
@@ -57,7 +58,7 @@ function generatePassword() {
   var userSpecial = confirm(
     "Would you like special characters? \nOk for yes, Cancel for no"
   );
-
+  // Logic to fit password criteria
   if (userLength < 8 || userLength > 128) {
     alert("Please select a number between 8 and 128 \nfor password length.");
     return generatePassword();
@@ -82,6 +83,7 @@ function generatePassword() {
   if (userNumber) {
     for (var i = 0; i < numbersGen.length; i++) {
       megaArray.push(numbersGen[i]);
+      
     }
   }
 
@@ -91,6 +93,7 @@ function generatePassword() {
     }
   }
   console.log(megaArray);
+  // Generate random from megaArray for final password
   var password = [];
   function passwordGen() {
     var randChar = megaArray[Math.floor(Math.random() * megaArray.length)];
@@ -115,6 +118,8 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+
+  megaArray = []
 }
 
 // Add event listener to generate button
