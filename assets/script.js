@@ -47,13 +47,12 @@ function generatePassword () {
       megaArray.push(specialChar[i]);
     } 
   }
-console.log (megaArray)
-
-  var passwordGen = megaArray[Math.floor(Math.random() * megaArray.length)];
+  console.log (megaArray)
   var password = []
+  var passwordGen = megaArray[Math.floor(Math.random() * megaArray.length)];
   if(password.length < userLength){
     for(var i = 0; i < userLength; i++){
-      password.push(passwordGen[i]);
+      password.push(passwordGen);
     }
   }
   console.log(password);
