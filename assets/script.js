@@ -49,7 +49,14 @@ function generatePassword () {
   }
 console.log (megaArray)
 
-  var password = Math.floor(Math.random() * megaArray.length)
+  var passwordGen = megaArray[Math.floor(Math.random() * megaArray.length)];
+  var password = []
+  if(password.length < userLength){
+    for(var i = 0; i < userLength; i++){
+      password.push(passwordGen[i]);
+    }
+  }
+  console.log(password);
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
