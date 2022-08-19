@@ -9,12 +9,16 @@ console.log(alphabetGen)
 var megaArray = []
 // User Function
 function generatePassword () {
-
+  var userLength = prompt("How many characters do you want your password? \n Must be between 8 and 128 characters.")
   var userLower = confirm("Would you like lowercase letters? \nOk for yes, Cancel for no");
   var userCapital = confirm("Would you like CAPITAL letters? \nOk for yes, Cancel for no");
   var userNumber = confirm("Would you like numbers? \nOk for yes, Cancel for no");
   var userSpecial = confirm("Would you like special characters? \nOk for yes, Cancel for no");
 
+  if (userLength < 8 || userLength > 128) {
+    alert ("Please select a number between 8 and 128 \nfor password length.");
+    return generatePassword ();
+  }
   if (!userLower && !userCapital && !userNumber && !userSpecial) {
     alert("You need to select one of the password elements");
     return generatePassword();
@@ -43,7 +47,9 @@ function generatePassword () {
       megaArray.push(specialChar[i]);
     } 
   }
+console.log (megaArray)
 
+  var password = Math.floor(Math.random() * megaArray.length)
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
