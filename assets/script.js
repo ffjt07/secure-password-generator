@@ -93,7 +93,7 @@ function generatePassword() {
     }
   }
   console.log(megaArray);
-  // Generate random from megaArray for final password
+  // Generate random characters from megaArray for final password
   var password = [];
   function passwordGen() {
     var randChar = megaArray[Math.floor(Math.random() * megaArray.length)];
@@ -105,6 +105,7 @@ function generatePassword() {
     }
   }
   console.log(password);
+  // returns final password in strying instead of array
   return password.join("");
 }
 
@@ -118,7 +119,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
+//Clears megaArray with every buttom click
   megaArray = []
 }
 
