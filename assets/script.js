@@ -105,7 +105,7 @@ function generatePassword() {
     }
   }
   console.log(password);
-  // returns final password in strying instead of array
+  // returns final password in string instead of array
   return password.join("");
 }
 
