@@ -8,4 +8,6 @@ https://ffjt07.github.io/secure-password-generator/
 ## Github Link
 https://github.com/ffjt07/secure-password-generator
 ## Preview
-![Jeremiah Torbit's Portfolio Preview]()
+![Jeremiah Torbit's Portfolio Preview](./assets/password-generator.gif)
+
+
