@@ -44,7 +44,7 @@ var megaArray = [];
 function generatePassword() {
   // function prompts
   var userLength = prompt(
-    "How many characters do you want your password? \n Must be between 8 and 128 characters."
+    "How many characters do you want your password to be? \n Must be between 8 and 128 characters."
   );
   var userLower = confirm(
     "Would you like lowercase letters? \nOk for yes, Cancel for no"
